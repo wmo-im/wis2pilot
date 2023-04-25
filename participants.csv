@@ -1,7 +1,27 @@
 Country,City,Component,Latitude,Longitude
 Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189
+Australia,Melbourne, Global Broker,-37.779941, 144.981441
 China,Beijing,Global Broker,39.9042,116.4074
+China,Beijing,Global Discovery Catalogue,39.9042,116.4074
 France,Paris,Global Broker,48.856613,2.352222
 Germany,Bonn,Global Cache,50.737431,7.098207
 Japan,Toyko,Global Cache,35.689487,139.691711
+Republic of Korea,Seoul,Global Discovery Catalogue,37.493780, 126.917197
+Republic of Korea,Seoul,Global Cache,37.493780, 126.917197
 Morocco,Casablanca,Global Monitoring,33.546852,-7.608045
+United States of Amercia,Washington, Global Cache, 38.942273, -77.265065
+Algeria, Alger,WIS2 node, 36.742238, 3.089219
+Argentina, Buenos Aires,WIS2 node,-34.563325, -58.417156
+Belize,Ladyville,WIS2 node,17.535176, -88.313857
+Burkina Faso,Ouagadougou,WIS2 node,12.398385, -1.501026
+Guinea,Konakry,WIS2 node,9.629904, -13.585207
+Republic of Congo,Brazzaville,-4.256777, 15.241981
+Italy, Rome,WIS2 node, 41.946104, 12.466310
+Malawi,Blantyre, WIS2 node, -15.790633, 35.004725
+Morocco,Casablanca,WIS2 node,33.546852,-7.608045
+New Zealand,Wellington,WIS2 node, -41.283109, 174.776473
+Nigeria, Abuja, WIS2 node, 5.013997, 6.929970
+Australia, Melbourne, WIS2 node,-37.779941, 144.981441
+ECMWF, Reading,WIS2 node, 51.419211, -0.950398
+Eumetsat,Darmstadt, WIS2 node, 49.865242, 8.629230
+Sweeden,Norrköping, WIS2 node,58.570761, 16.116790
