@@ -26,3 +26,6 @@ ECMWF, Reading,WIS2 node,51.419211,-0.950398
 Eumetsat,Darmstadt, WIS2 node,49.865242,8.629230
 Sweeden,Norrköping, WIS2 node,58.570761,16.116790
 CAP-Alerts,Tsim Sha Tsui, WIS2 node,22.301667, 114.174103
+Brazil,Brazlia, WIS2 node(Hydrology), -15.834615, -47.774391
+Uruguay, Montevideo, WIS2 node (Hydrology),-34.856218, -56.174222
+Norway, Oslo, WIS2 node (Cryosphere),59.919918, 10.764509
