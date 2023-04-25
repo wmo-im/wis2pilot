@@ -1,13 +1,13 @@
 Country,City,Component,Latitude,Longitude
 Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189
-Australia,Melbourne, Global Broker,-37.779941, 144.981441
+Australia,Melbourne, Global Broker,-37.779941,144.981441
 China,Beijing,Global Broker,39.9042,116.4074
 China,Beijing,Global Discovery Catalogue,39.9042,116.4074
 France,Paris,Global Broker,48.856613,2.352222
 Germany,Bonn,Global Cache,50.737431,7.098207
 Japan,Toyko,Global Cache,35.689487,139.691711
 Republic of Korea,Seoul,Global Discovery Catalogue,37.493780,126.917197
-Republic of Korea,Seoul,Global Cache,37.493780, 126.917197
+Republic of Korea,Seoul,Global Cache,37.493780,126.917197
 Morocco,Casablanca,Global Monitoring,33.546852,-7.608045
 United States of Amercia,Washington, Global Cache, 38.942273,-77.265065
 Algeria, Alger,WIS2 node,36.742238,3.089219
