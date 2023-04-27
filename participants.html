@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WIS2 pilot participants</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <header>
+            <h2>WIS2 pilot participants</h2>
+        </header>
+        <div id="map" style="height: 600px;"></div>
+        <footer>
+            Powered by WIS 2.0
+        </footer>
+    </body>
+    <script>
+        var map = L.map('map').setView([0, 0], 2);
+        var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 19,
+          attributionControl: false
+        }).addTo(map);
+        map.attributionControl.setPrefix('');
+    </script>
+</html>
