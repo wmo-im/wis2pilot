@@ -47,9 +47,9 @@
             "properties": {
                 "Country": "China",
                 "City": "Beijing",
-                "Component": "Global Broker",
-                "Status": "Up",
-                "markerIcon": "gb.png"
+                "Component": "Global Discovery Catalogue",
+                "Status": "Down",
+                "markerIcon": "gdc.png"
             }
         },
         {
@@ -64,9 +64,9 @@
             "properties": {
                 "Country": "China",
                 "City": "Beijing",
-                "Component": "Global Discovery Catalogue",
-                "Status": "Down",
-                "markerIcon": "gdc.png"
+                "Component": "Global Broker",
+                "Status": "Up",
+                "markerIcon": "gb.png"
             }
         },
         {
