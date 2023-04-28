@@ -199,7 +199,7 @@
             },
             "properties": {
                 "Country": "Algeria",
-                "City": "Alger",
+                "City": "Algiers",
                 "Component": "WIS2 Node",
                 "Status": "Up",
                 "markerIcon": "node.png"
@@ -419,7 +419,7 @@
                 ]
             },
             "properties": {
-                "Country": "Eumetsat",
+                "Country": "EUMETSAT",
                 "City": "Darmstadt",
                 "Component": "WIS2 Node",
                 "Status": "Up",
@@ -436,7 +436,7 @@
                 ]
             },
             "properties": {
-                "Country": "Sweeden",
+                "Country": "Sweden",
                 "City": "Norrköping",
                 "Component": "WIS2 Node",
                 "Status": "Up",
