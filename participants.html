@@ -17,9 +17,16 @@
     <script>
         var map = L.map('map').setView([0, 0], 2);
         var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
-          maxZoom: 19,
-          attributionControl: false
+            maxZoom: 19,
+            attributionControl: false
         }).addTo(map);
+
         map.attributionControl.setPrefix('');
+
+        fetch("participantsgeojson").then(function(response) {
+            return response.json();
+        }).then(function(data) {
+            L.geoJSON(data).addTo(map);
+        });
     </script>
 </html>
