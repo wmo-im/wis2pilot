@@ -9,15 +9,15 @@
 
     <body>
         <header>
-            <h2>WIS2 pilot participants</h2>
+            <h2>WIS2 pilot participants (<a href="https://github.com/wmo-im/wis2pilot/blob/main/participants.csv">GitHub</a>)</h2>
         </header>
         <hr>
         <section id="main">
             <form>
-                <input type="radio" id="all" name="display_type" value="all" onclick="redrawLayer();">
-                <label for="all">All services</label><br>
                 <input type="radio" id="up" name="display_type" value="up" onclick="redrawLayer();" checked>
                 <label for="live">Live services</label><br>
+                <input type="radio" id="all" name="display_type" value="all" onclick="redrawLayer();">
+                <label for="all">All services</label><br>
             </form>
             <div id="map" style="height: 600px;"></div>
         </section>
