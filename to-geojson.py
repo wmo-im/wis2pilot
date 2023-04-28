@@ -58,7 +58,7 @@ with open('participants.csv') as fh:
                 'City': row['City'],
                 'Component': row['Component'],
                 'Status': row['Status'],
-                'marker-icon': f'{marker_icon}.png'
+                'markerIcon': f'{marker_icon}.png'
             }
         })
 
