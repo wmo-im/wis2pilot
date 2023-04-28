@@ -10,7 +10,7 @@ Republic of Korea,Seoul,Global Discovery Catalogue,37.493780,126.917197,Down
 Republic of Korea,Seoul,Global Cache,37.493780,126.917197,Down
 Morocco,Casablanca,Global Monitoring,33.546852,-7.608045,Down
 United States of America,Washington,Global Cache,38.942273,-77.265065,Down
-Algeria,Alger,WIS2 Node,36.742238,3.089219,Up
+Algeria,Algiers,WIS2 Node,36.742238,3.089219,Up
 Argentina,Buenos Aires,WIS2 Node,-34.563325,-58.417156,Up
 Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down
 Burkina Faso,Ouagadougou,WIS2 Node,12.398385,-1.501026,Up
@@ -23,8 +23,8 @@ New Zealand,Wellington,WIS2 Node,-41.283109,174.776473,Down
 Nigeria,Abuja,WIS2 Node,5.013997,6.929970,Up
 Australia,Melbourne,WIS2 Node,-37.779941,144.981441,Down
 ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down
-Eumetsat,Darmstadt,WIS2 Node,49.865242,8.629230,Up
-Sweeden,Norrköping,WIS2 Node,58.570761,16.116790,Up
+EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up
+Sweden,Norrköping,WIS2 Node,58.570761,16.116790,Up
 CAP-Alerts,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up
 Brazil,Brazlia,WIS2 Node(Hydrology),-15.834615,-47.774391,Down
 Uruguay,Montevideo,WIS2 Node (Hydrology),-34.856218,-56.174222,Down
