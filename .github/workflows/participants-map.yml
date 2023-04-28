@@ -18,11 +18,11 @@ jobs:
           python-version: '3.x'
       - name: generate GeoJSON and push to gh-pages 📦
         run: |
-          python3 to-geojson.py > participants.geojson
-          git push --set-upstream origin gh-pages
+          python3 to-geojson.py > /tmp/participants.geojson
           git config --global user.email "tomkralidis@gmail.com"
           git config --global user.name "Tom Kralidis"
+          git fetch
           git checkout gh-pages
-          git add participants.geojson
+          mv -f /tmp/participants.geojson .
           git commit -m "update participants GeoJSON" -a
           git push

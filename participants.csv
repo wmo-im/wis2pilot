@@ -1,8 +1,8 @@
 Country,City,Component,Latitude,Longitude,Status
 Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189,Up
 Australia,Melbourne,Global Broker,-37.779941,144.981441,Down
-China,Beijing,Global Broker,39.9042,116.4074,Up
 China,Beijing,Global Discovery Catalogue,39.9042,116.4074,Down
+China,Beijing,Global Broker,39.9042,116.4074,Up
 France,Paris,Global Broker,48.856613,2.352222,Up
 Germany,Bonn,Global Cache,50.737431,7.098207,Up
 Japan,Toyko,Global Cache,35.689487,139.691711,Up
