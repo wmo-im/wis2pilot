@@ -1,0 +1,515 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.697189,
+                    45.421532
+                ]
+            },
+            "properties": {
+                "Country": "Canada",
+                "City": "Ottawa",
+                "Component": "Global Discovery Catalogue",
+                "Status": "Up",
+                "markerIcon": "gdc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    144.981441,
+                    -37.779941
+                ]
+            },
+            "properties": {
+                "Country": "Australia",
+                "City": "Melbourne",
+                "Component": "Global Broker",
+                "Status": "Down",
+                "markerIcon": "gb.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    116.4074,
+                    39.9042
+                ]
+            },
+            "properties": {
+                "Country": "China",
+                "City": "Beijing",
+                "Component": "Global Broker",
+                "Status": "Up",
+                "markerIcon": "gb.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    116.4074,
+                    39.9042
+                ]
+            },
+            "properties": {
+                "Country": "China",
+                "City": "Beijing",
+                "Component": "Global Discovery Catalogue",
+                "Status": "Down",
+                "markerIcon": "gdc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.352222,
+                    48.856613
+                ]
+            },
+            "properties": {
+                "Country": "France",
+                "City": "Paris",
+                "Component": "Global Broker",
+                "Status": "Up",
+                "markerIcon": "gb.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.098207,
+                    50.737431
+                ]
+            },
+            "properties": {
+                "Country": "Germany",
+                "City": "Bonn",
+                "Component": "Global Cache",
+                "Status": "Up",
+                "markerIcon": "gc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.691711,
+                    35.689487
+                ]
+            },
+            "properties": {
+                "Country": "Japan",
+                "City": "Toyko",
+                "Component": "Global Cache",
+                "Status": "Up",
+                "markerIcon": "gc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.917197,
+                    37.49378
+                ]
+            },
+            "properties": {
+                "Country": "Republic of Korea",
+                "City": "Seoul",
+                "Component": "Global Discovery Catalogue",
+                "Status": "Down",
+                "markerIcon": "gdc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    126.917197,
+                    37.49378
+                ]
+            },
+            "properties": {
+                "Country": "Republic of Korea",
+                "City": "Seoul",
+                "Component": "Global Cache",
+                "Status": "Down",
+                "markerIcon": "gc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.608045,
+                    33.546852
+                ]
+            },
+            "properties": {
+                "Country": "Morocco",
+                "City": "Casablanca",
+                "Component": "Global Monitoring",
+                "Status": "Down",
+                "markerIcon": "gm.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.265065,
+                    38.942273
+                ]
+            },
+            "properties": {
+                "Country": "United States of America",
+                "City": "Washington",
+                "Component": "Global Cache",
+                "Status": "Down",
+                "markerIcon": "gc.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.089219,
+                    36.742238
+                ]
+            },
+            "properties": {
+                "Country": "Algeria",
+                "City": "Alger",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -58.417156,
+                    -34.563325
+                ]
+            },
+            "properties": {
+                "Country": "Argentina",
+                "City": "Buenos Aires",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.313857,
+                    17.535176
+                ]
+            },
+            "properties": {
+                "Country": "Belize",
+                "City": "Ladyville",
+                "Component": "WIS2 Node (Climate)",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.501026,
+                    12.398385
+                ]
+            },
+            "properties": {
+                "Country": "Burkina Faso",
+                "City": "Ouagadougou",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -13.585207,
+                    9.629904
+                ]
+            },
+            "properties": {
+                "Country": "Guinea",
+                "City": "Konakry",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.241981,
+                    -4.256777
+                ]
+            },
+            "properties": {
+                "Country": "Republic of Congo",
+                "City": "Brazzaville",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.46631,
+                    41.946104
+                ]
+            },
+            "properties": {
+                "Country": "Italy",
+                "City": "Rome",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35.004725,
+                    -15.790633
+                ]
+            },
+            "properties": {
+                "Country": "Malawi",
+                "City": "Blantyre",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.608045,
+                    33.546852
+                ]
+            },
+            "properties": {
+                "Country": "Morocco",
+                "City": "Casablanca",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    174.776473,
+                    -41.283109
+                ]
+            },
+            "properties": {
+                "Country": "New Zealand",
+                "City": "Wellington",
+                "Component": "WIS2 Node",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.92997,
+                    5.013997
+                ]
+            },
+            "properties": {
+                "Country": "Nigeria",
+                "City": "Abuja",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    144.981441,
+                    -37.779941
+                ]
+            },
+            "properties": {
+                "Country": "Australia",
+                "City": "Melbourne",
+                "Component": "WIS2 Node",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.950398,
+                    51.419211
+                ]
+            },
+            "properties": {
+                "Country": "ECMWF",
+                "City": "Reading",
+                "Component": "WIS2 Node",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.62923,
+                    49.865242
+                ]
+            },
+            "properties": {
+                "Country": "Eumetsat",
+                "City": "Darmstadt",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.11679,
+                    58.570761
+                ]
+            },
+            "properties": {
+                "Country": "Sweeden",
+                "City": "Norrköping",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    114.174103,
+                    22.301667
+                ]
+            },
+            "properties": {
+                "Country": "CAP-Alerts",
+                "City": "Tsim Sha Tsui",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -47.774391,
+                    -15.834615
+                ]
+            },
+            "properties": {
+                "Country": "Brazil",
+                "City": "Brazlia",
+                "Component": "WIS2 Node(Hydrology)",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -56.174222,
+                    -34.856218
+                ]
+            },
+            "properties": {
+                "Country": "Uruguay",
+                "City": "Montevideo",
+                "Component": "WIS2 Node (Hydrology)",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.764509,
+                    59.919918
+                ]
+            },
+            "properties": {
+                "Country": "Norway",
+                "City": "Oslo",
+                "Component": "WIS2 Node (Cryosphere)",
+                "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        }
+    ]
+}

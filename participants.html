@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <meta charset="UTF-8">
         <title>WIS2 pilot participants</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     </head>
+
     <body>
         <header>
             <h2>WIS2 pilot participants</h2>
         </header>
-        <div id="map" style="height: 600px;"></div>
-        <footer>
-            Powered by WIS 2.0
-        </footer>
+        <hr>
+        <section id="main">
+            <form>
+                <input type="radio" id="all" name="display_type" value="all" onclick="redrawLayer();" checked>
+                <label for="all">All services</label><br>
+                <input type="radio" id="up" name="display_type" value="up" onclick="redrawLayer();">
+                <label for="live">Live services</label><br>
+            </form>
+            <div id="map" style="height: 600px;"></div>
+        </section>
+        <hr>
+        <footer>Powered by WIS 2.0</footer>
     </body>
+
     <script>
+        var the_data = null;
+        var geojsonLayer = null;
         var map = L.map('map').setView([0, 0], 2);
         var tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}', {
             maxZoom: 19,
             attributionControl: false
         }).addTo(map);
-
         map.attributionControl.setPrefix('');
 
-        fetch("participantsgeojson").then(function(response) {
+        function redrawLayer(displayType) {
+            map.removeLayer(geojsonLayer);
+            addTheLayer(the_data);
+        }
+
+        function genPopup(feature, layer) {
+            var popupText = feature.properties.Country + ' (' + feature.properties.City + ') - ' + feature.properties.Component;
+            layer.bindPopup(popupText);
+        }
+
+        function genMarker(feature, latlng) {
+            var displayType = 'all';
+
+            element = document.getElementsByName('display_type');
+
+            for (var i = 0, length = element.length; i < length; i++) {
+                if (element[i].checked) {
+                    displayType = element[i].value;                    
+                }
+            }
+
+            if (displayType === 'up' && feature.properties.Status !== 'Up') {
+                return;
+            }
+
+            var icon = new L.Icon({
+                iconUrl: feature.properties.markerIcon,
+                iconSize: [32, 32]
+            });
+            return L.marker(latlng, {icon: icon});
+        }
+
+        fetch('participants.geojson').then(function(response) {
             return response.json();
         }).then(function(data) {
-            L.geoJSON(data).addTo(map);
+            the_data = data;
+            addTheLayer(the_data);
         });
+
+        function addTheLayer(data) {
+            geojsonLayer = L.geoJSON(data, {
+                pointToLayer: genMarker,
+                onEachFeature: genPopup
+            })
+            geojsonLayer.addTo(map);
+        }
     </script>
 </html>
