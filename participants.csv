@@ -23,9 +23,9 @@ New Zealand,Wellington,WIS2 Node,-41.283109,174.776473,Down
 Nigeria,Abuja,WIS2 Node,5.013997,6.929970,Up
 Australia,Melbourne,WIS2 Node,-37.779941,144.981441,Down
 ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down
-EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up
+EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Down
 Sweden,Norrköping,WIS2 Node,58.570761,16.116790,Up
-CAP-Alerts,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up
+SWIC,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up
 Brazil,Brazlia,WIS2 Node(Hydrology),-15.834615,-47.774391,Down
 Uruguay,Montevideo,WIS2 Node (Hydrology),-34.856218,-56.174222,Down
 Norway,Oslo,WIS2 Node (Cryosphere),59.919918,10.764509,Down
