@@ -166,9 +166,43 @@
             "properties": {
                 "Country": "Morocco",
                 "City": "Casablanca",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.608045,
+                    33.546852
+                ]
+            },
+            "properties": {
+                "Country": "Morocco",
+                "City": "Casablanca",
                 "Component": "Global Monitoring",
-                "Status": "Down",
+                "Status": "Up",
                 "markerIcon": "gm.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.92944,
+                    29.22456
+                ]
+            },
+            "properties": {
+                "Country": "United States of America",
+                "City": "Washington",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
             }
         },
         {
@@ -321,23 +355,6 @@
                 "City": "Blantyre",
                 "Component": "WIS2 Node",
                 "Status": "Up",
-                "markerIcon": "node.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.608045,
-                    33.546852
-                ]
-            },
-            "properties": {
-                "Country": "Morocco",
-                "City": "Casablanca",
-                "Component": "WIS2 Node",
-                "Status": "Down",
                 "markerIcon": "node.png"
             }
         },
@@ -508,23 +525,6 @@
                 "City": "Oslo",
                 "Component": "WIS2 Node (Cryosphere)",
                 "Status": "Down",
-                "markerIcon": "node.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -81.92944,
-                    29.22456
-                ]
-            },
-            "properties": {
-                "Country": "United States of America",
-                "City": "Washington",
-                "Component": "WIS2 Node",
-                "Status": "Up",
                 "markerIcon": "node.png"
             }
         }
