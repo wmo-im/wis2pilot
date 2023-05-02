@@ -337,7 +337,7 @@
                 "Country": "Morocco",
                 "City": "Casablanca",
                 "Component": "WIS2 Node",
-                "Status": "Up",
+                "Status": "Down",
                 "markerIcon": "node.png"
             }
         },
@@ -422,7 +422,7 @@
                 "Country": "EUMETSAT",
                 "City": "Darmstadt",
                 "Component": "WIS2 Node",
-                "Status": "Up",
+                "Status": "Down",
                 "markerIcon": "node.png"
             }
         },
@@ -453,7 +453,7 @@
                 ]
             },
             "properties": {
-                "Country": "CAP-Alerts",
+                "Country": "SWIC",
                 "City": "Tsim Sha Tsui",
                 "Component": "WIS2 Node",
                 "Status": "Up",
@@ -508,6 +508,23 @@
                 "City": "Oslo",
                 "Component": "WIS2 Node (Cryosphere)",
                 "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.92944,
+                    29.22456
+                ]
+            },
+            "properties": {
+                "Country": "United States of America",
+                "City": "Washington",
+                "Component": "WIS2 Node",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         }
