@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WIS2 Global Discovery Catalogue demo</title>
+        <style type="text/css">
+            #div-map {
+                //width: 400px;
+                height: 300px;
+            }
+            #div-oarec-results, #div-oarec-results-glass, #div-subscribe-results, #div-subscribe-results-glass {
+                width: 500px;
+                height: 300px;
+                overflow-y: auto;
+            }
+            #div-oarec-results-glass, #div-subscribe-results-glass {
+                background-color: white;
+                filter:alpha(opacity=50); /* IE */
+                opacity: 0.5; /* Safari, Opera */
+                -moz-opacity:0.50; /* FireFox */
+                z-index: 20;
+                background-repeat:no-repeat;
+                background-position:center;
+                position:absolute;
+                display: none;
+            }
+            footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                height: 100px;
+                width: 100%;
+            }
+        </style>
+        <!-- leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+        <script type="text/javascript" src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- MQTT.js -->
+        <script type="text/javascript" src="https://unpkg.com/mqtt@4.0.1/dist/mqtt.min.js"></script>
+
+        <script type="text/javascript">
+
+            var map = null;
+            var map_layers_control = null;
+            var oarec_url = $('#input-oarec-url').val();
+            var limit = 10;
+
+            function truncate(value, length) {
+                if (value.length > length) {
+                    return value.substring(0, length) + '...';
+                }
+                return value;
+            }
+
+            function bbox2polygon(bbox) {
+                if (bbox=== null) {
+                    return new L.Polygon();
+                }
+                var coords = bbox.split(',');
+
+                return new L.Polygon([
+                    new L.LatLng(coords[1], coords[0]),
+                    new L.LatLng(coords[1], coords[2]),
+                    new L.LatLng(coords[3], coords[2]),
+                    new L.LatLng(coords[3], coords[0])
+                ]);
+            }
+
+            function style_record(rec) {
+
+                var bbox_csv = rec.geometry.coordinates[0][0][0] + "," + rec.geometry.coordinates[0][0][1] + "," +
+                               rec.geometry.coordinates[0][2][0] + "," + rec.geometry.coordinates[0][2][1];
+                var snippet = '<tr><th scope="row">';
+                url = $('#input-oarec-url').val() + '/items/' + rec.id;
+                title2 = '<a id="' + bbox_csv + '" class="a-record" target="_blank" title="' + rec.properties.title + '" href="' + url  + '">' + rec.properties.title + '</a>';
+                snippet += '<h5>' + title2 + '</h5>';
+                snippet += '<h5>' + truncate(rec.properties.description, 255) + '</h5>';
+                snippet += '<small><strong>Created</strong>: ' + rec.properties.created + '</small><br/>';
+                snippet += '<small><strong>Links</strong></small><br/>';
+                snippet += '<ul>';
+
+                for (let i = 0; i < rec.links.length; i++) {
+                    if (rec.links[i].type === 'MQTT') {
+                        if (rec.links[i].hasOwnProperty('wmo:topic')) {
+                            channel2 = rec.links[i]['wmo:topic'];
+                        } else {
+                            channel2 = rec.links[i].channel;
+                        }
+                        snippet += '<li><a class="pubsub-channel" id="' + channel2.replace('origin', 'cache')  + '" href="#">Subscribe to data download</a></li>';
+                    } else {
+                        snippet += '<li><a href="' + rec.links[i].href + '">' + rec.links[i].title + '</a></li>';
+                    }
+                }
+                snippet += '</ul>';
+                snippet += '</th></tr>';
+                return snippet;
+            }
+
+            function search(startindex) {
+                params = {
+                    limit: limit
+                }
+
+                $('#div-oarec-results-glass').toggle();
+
+                if (!startindex) {
+                    startindex = 0;
+                }
+
+                params.startindex = startindex;
+
+                var q = $('#input-q').val().trim();
+
+                if (q != '') {
+                    params.q = q;
+                }
+
+                var bbox_enabled = $('#input-bbox').is(':checked');
+
+                if (bbox_enabled && map != null) {
+                    bounds = map.getBounds();
+                    params.bbox = Math.max(bounds.getWest(), -180) + ',' + Math.max(bounds.getSouth(), -90) + ',' + Math.min(bounds.getEast(), 180) + ',' + Math.min(bounds.getNorth(), 90);
+                }
+
+                $.ajax({
+                    type: "GET",
+                    url: $('#input-oarec-url').val() + '/items',
+                    withCredentials: false,
+                    //crossDomain: true,
+                    dataType: 'jsonp',
+                    data: params,
+                    dataType: 'json',
+                    success: function(results) {
+                        $('#table-subscribe-results').empty();
+                        $('#div-oarec-results-glass').toggle();
+                        //$('#div-results').empty();
+                        //$('#div-results2').empty();
+                        // derive results for paging
+                        var matched = results.numberMatched;
+                        var returned = results.numberReturned;
+                        var nextrecord = results.numberReturned;
+
+                        $('#input-startindex').val(startindex);
+                        $('#input-nextrecord').val(startindex + returned);
+                        $('#input-matched').val(matched);
+
+                        if (matched === 0) {
+                            $('#div-results').html('');
+                            $('#table-oarec-results').html('<tr><td>No results</td></tr>');
+                            return;
+                        }
+                        if (nextrecord === 0 || nextrecord >= matched) { // at the end
+                            $('#li-next').attr('class', 'disabled');
+                            nextrecord = matched;
+                        }
+                        else {
+                            $('#li-next').attr('class', 'active');
+                        }
+                        if (startindex === 0) {
+                            $('#li-previous').attr('class', 'disabled');
+                        }
+                        else {
+                            $('#li-previous').attr('class', 'active');
+                        }
+
+                        results_html = '<strong>Results ' + startindex + '-' + $('#input-nextrecord').val() + ' of ' + matched + ' record(s)</strong>';
+                        $('#div-results').html(results_html);
+
+                        for (let i = 0; i < results.features.length; i++) { 
+                            $("#table-oarec-results").append(style_record(results.features[i]));
+                        }
+                    }
+                });
+            }
+            $(document).ready(function(){
+                // init the map
+                polygon_layer = null;
+                map = L.map('div-map').setView([10, 0], 1);
+                basemap = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                })
+                map.addLayer(basemap);
+                map_layers_control = L.control.layers({"basemap": basemap}, {}, {'collapsed': true}).addTo(map);
+                // init the results table with OARec results
+                search();
+                // handle OARec searches
+                $("#form-search").keypress(function (e) {
+                    if (e.keyCode === 13) { // Enter key pressed, but not submitting the form to a page refresh
+                        search();
+                        return false;
+                    }
+                });
+                $('#a-previous').click(function(event){
+                    event.preventDefault(); 
+                    startindex2 = $('#input-startindex').val() - limit;
+                    if (startindex2 < 1) {
+                        return;
+                    }
+                    search(startindex2);
+                }); 
+                $('#a-next').click(function(event){
+                    event.preventDefault(); 
+                    nextrecord2 = parseInt($('#input-nextrecord').val());
+                    matched2 = parseInt($('#input-matched').val());
+                    if (nextrecord2 === 0 || nextrecord2>=matched2) {
+                        return;
+                    }
+                    search(nextrecord2);
+                }); 
+                $("table").on("mouseenter", "th", function(event) {
+                    bbox = $(this).find('[id]').attr('id');
+                    if (polygon_layer != null && map.hasLayer(polygon_layer)) {
+                        map.removeLayer(polygon_layer);
+                    }
+                    if ($('#input-footprints').is(':checked')) {
+                        if (bbox !== undefined) {
+                            polygon_layer = bbox2polygon(bbox);
+                            map.addLayer(polygon_layer);
+                        }
+                    }
+                });
+                $("#div-oarec-results").on('click', '.pubsub-channel', function(event){
+                    const host = 'wss://globalbroker.meteo.fr:443/mqtt';
+                    var channel = this.id;
+                    const options = {
+                        username: 'anonymous',
+                        password: 'anonymous',
+                        keepalive: 60,
+                        protocolVersion: 5,
+                        reconnectPeriod: 1000,
+                        connectTimeout: 30 * 1000,
+                    };
+        
+                    console.log('Connecting mqtt client');
+                    const client = mqtt.connect(host, options);
+        
+                    client.on('connect', function () {
+                        //client.subscribe('origin/#', function (err) {
+                        client.subscribe(channel, function (err) {
+                            if (!err) {
+                                console.log('Connected!')
+                                $("#div-results2").html("<h5>Subscribed to<br><code>" + channel + "</code></h5>");
+                            }
+                        })
+                    })
+        
+                    client.on('error', (err) => {
+                        console.log('Connection error: ', err)
+                        client.end()
+                    });
+        
+                    client.on('reconnect', () => {
+                        console.log('Reconnecting...')
+                    });
+
+                    client.on('message', function (topic, message) {
+                        const content = JSON.parse(message.toString())
+                        var link = null;
+
+                        for (let i = 0; i < content.links.length; i++) {
+                            if (content.links[i].rel === 'canonical') {
+                                link = content.links[i].href;
+                            }
+                        }
+                        var link_html = "<p>" + link + "</p>";
+                        $("#table-subscribe-results").append(link_html);
+                });
+            });
+        })
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>WIS2 Global Discovery Catalogue demo</h1>
+        </header>
+        <section>
+            <div class="panel">
+                <form id="form-search">
+                    <input type="hidden" id="input-startindex"/>
+                    <input type="hidden" id="input-matched"/>
+                    <input type="hidden" id="input-nextrecord"/>
+                    <div class="row">
+                        <div class="col-sm-4" id="div-bbox"><strong>Filter by map extent</strong> <input type="checkbox" id="input-bbox"/> <strong>Footprints</strong> <input type="checkbox" id="input-footprints"/></div>
+                        <div class="col-sm-4 pull-left" id="div-search"><input class="form-control input-medium" type="text" id="input-q" placeholder="Search Terms"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 pull-left" id="div-oarec-url"><input class="form-control input-medium" type="text" id="input-oarec-url" placeholder="https://api.weather.gc.ca/collections/wis2-discovery-metadata" value="https://api.weather.gc.ca/collections/wis2-discovery-metadata" readonly/></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4" id="div-map"></div>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div id="div-oarec-results-glass"></div>
+                                <div class="col-sm-12" id="div-oarec-results">
+                                    <table class="table table-bordered table-striped" id="table-oarec-results">
+                                        <thead>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 text-center container">
+                                        <div id="div-results"></div>
+                                        <ul class="pagination">
+                                            <li id="li-previous" class="page-item"><a class="page-link" id="a-previous" title="Previous" href="#">Previous</a></li>
+                                            <li id="li-next" class="page-item"><a class="page-link" id="a-next" title="Next" href="#">Next</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div id="div-subscribe-results-glass"></div>
+                                <div class="col-sm-12" id="div-subscribe-results">
+                                    <div id="div-results2">Subscriptions</div>
+                                    <table class="table table-bordered table-striped" id="table-subscribe-results">
+                                        <thead>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            Powered by WIS 2.0
+        </footer>
+    </body>
+</html>
