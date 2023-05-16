@@ -139,9 +139,10 @@
                     data: params,
                     dataType: 'json',
                     success: function(results) {
+                        $('#table-oarec-results').empty();
                         $('#table-subscribe-results').empty();
                         $('#div-oarec-results-glass').toggle();
-                        //$('#div-results').empty();
+                        $('#div-results').empty();
                         //$('#div-results2').empty();
                         // derive results for paging
                         var matched = results.numberMatched;
