@@ -48,7 +48,7 @@
                 "Country": "China",
                 "City": "Beijing",
                 "Component": "Global Discovery Catalogue",
-                "Status": "Down",
+                "Status": "Up",
                 "markerIcon": "gdc.png"
             }
         },
