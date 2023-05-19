@@ -1,4 +1,5 @@
 Country,City,Component,Latitude,Longitude,Status
+Canada,Ottawa,WIS2 Node,45.421532,-75.697189,Up
 Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189,Up
 Australia,Melbourne,Global Broker,-37.779941,144.981441,Down
 China,Beijing,Global Discovery Catalogue,39.9042,116.4074,Up
