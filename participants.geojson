@@ -13,6 +13,23 @@
             "properties": {
                 "Country": "Canada",
                 "City": "Ottawa",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -75.697189,
+                    45.421532
+                ]
+            },
+            "properties": {
+                "Country": "Canada",
+                "City": "Ottawa",
                 "Component": "Global Discovery Catalogue",
                 "Status": "Up",
                 "markerIcon": "gdc.png"
