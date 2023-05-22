@@ -8,6 +8,7 @@
             #div-map {
                 //width: 400px;
                 height: 300px;
+                display: flex;
             }
             #div-oarec-results, #div-oarec-results-glass, #div-subscribe-results, #div-subscribe-results-glass {
                 width: 500px;
@@ -26,7 +27,7 @@
                 display: none;
             }
             footer {
-                position: fixed;
+//                position: fixed;
                 left: 0;
                 bottom: 0;
                 height: 100px;
@@ -34,17 +35,17 @@
             }
         </style>
         <!-- leaflet -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
-        <script type="text/javascript" src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <script type="text/javascript" src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
         <!-- jQuery -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" media="screen" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
 
         <!-- MQTT.js -->
-        <script type="text/javascript" src="https://unpkg.com/mqtt@4.0.1/dist/mqtt.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/mqtt@4.3.7/dist/mqtt.min.js"></script>
 
         <script type="text/javascript">
 
@@ -185,6 +186,7 @@
                 // init the map
                 polygon_layer = null;
                 map = L.map('div-map').setView([10, 0], 1);
+                map.attributionControl.setPrefix('');
                 basemap = L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 })
@@ -248,7 +250,7 @@
                         client.subscribe(channel, function (err) {
                             if (!err) {
                                 console.log('Connected!')
-                                $("#div-results2").html("<h5>Subscribed to<br><code>" + channel + "</code></h5>");
+                                $("#div-results2").html("<h6>Subscribed to: <code>" + channel + "</code></h6>");
                             }
                         })
                     })
@@ -271,7 +273,7 @@
                                 link = content.links[i].href;
                             }
                         }
-                        var link_html = "<p>" + link + "</p>";
+                        var link_html = '<p><a href="' + link + '">' + link + '</a></p>';
                         $("#table-subscribe-results").append(link_html);
                 });
             });
@@ -280,21 +282,23 @@
         </script>
     </head>
     <body>
-        <header>
+        <header class="mx-auto" style="width: 95%">
             <h1>WIS2 Global Discovery Catalogue demo</h1>
         </header>
         <section>
-            <div class="panel">
+            <div class="panel mx-auto border" style="width: 95%;">
                 <form id="form-search">
                     <input type="hidden" id="input-startindex"/>
                     <input type="hidden" id="input-matched"/>
                     <input type="hidden" id="input-nextrecord"/>
                     <div class="row">
-                        <div class="col-sm-4" id="div-bbox"><strong>Filter by map extent</strong> <input type="checkbox" id="input-bbox"/> <strong>Footprints</strong> <input type="checkbox" id="input-footprints"/></div>
+                        <div class="col-sm-4" id="div-bbox"><strong>Filter by map extent</strong> <input type="checkbox" id="input-bbox"/> <strong>Footprints</strong> <input type="checkbox" id="input-footprints" checked/></div>
                         <div class="col-sm-4 pull-left" id="div-search"><input class="form-control input-medium" type="text" id="input-q" placeholder="Search Terms"/></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 pull-left" id="div-oarec-url"><input class="form-control input-medium" type="text" id="input-oarec-url" placeholder="https://api.weather.gc.ca/collections/wis2-discovery-metadata" value="https://api.weather.gc.ca/collections/wis2-discovery-metadata" readonly/></div>
+                        <div class="col-sm-4 pull-left" id="div-oarec-url">
+                        <label for="input-oarec-url">Global Discovery Catalogue Canada</label>
+                        <input class="form-control input-medium" type="hidden" id="input-oarec-url" placeholder="https://api.weather.gc.ca/collections/wis2-discovery-metadata" value="https://api.weather.gc.ca/collections/wis2-discovery-metadata" readonly/></div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4" id="div-map"></div>
@@ -326,28 +330,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="row">
-                                <div id="div-subscribe-results-glass"></div>
-                                <div class="col-sm-12" id="div-subscribe-results">
-                                    <div id="div-results2">Subscriptions</div>
-                                    <table class="table table-bordered table-striped" id="table-subscribe-results">
-                                        <thead>
-                                            <tr>
-                                                <td></td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </form>
+            </div>
+        </section>
+        <section>
+            <div class="row mx-auto border">
+                <div class="col-8">
+                    <div class="row">
+                        <div id="div-subscribe-results-glass"></div>
+                        <div class="col-8" id="div-subscribe-results">
+                            <div id="div-results2">Subscriptions</div>
+                            <table class="table table-bordered table-striped" id="table-subscribe-results">
+                                <thead>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <hr>
