@@ -108,13 +108,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    7.098207,
-                    50.737431
+                    8.747517,
+                    50.102904
                 ]
             },
             "properties": {
                 "Country": "Germany",
-                "City": "Bonn",
+                "City": "Offenbach",
                 "Component": "Global Cache",
                 "Status": "Up",
                 "markerIcon": "gc.png"
