@@ -558,7 +558,7 @@
                 "Country": "Namibia",
                 "City": "Windhoek",
                 "Component": "WIS2 Node",
-                "Status": "WIS2 Node",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
