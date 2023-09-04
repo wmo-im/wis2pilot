@@ -47,7 +47,7 @@ Zimbabwe,Harare,WIS2 Node,-17.8165683,30.8917044,Up,http://136.156.88.41/
 Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down,
 ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down,
 EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,
-SWIC,Tsim Sha Tsui,WIS2 Node,,22.301667,114.174103,Up
-Brazil,Brazlia,WIS2 Node(Hydrology),,-15.834615,-47.774391,Down
-Uruguay,Montevideo,WIS2 Node (Hydrology),,-34.856218,-56.174222,Down
-Norway,Oslo,WIS2 Node (Cryosphere),,59.919918,10.764509,Down
+SWIC,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up,
+Brazil,Brazlia,WIS2 Node(Hydrology),-15.834615,-47.774391,Down,
+Uruguay,Montevideo,WIS2 Node (Hydrology),-34.856218,-56.174222,Down,
+Norway,Oslo,WIS2 Node (Cryosphere),59.919918,10.764509,Down,
