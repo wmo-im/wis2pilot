@@ -1,52 +1,52 @@
-Country,City,Component,URL,Latitude,Longitude,Status
-Australia,Melbourne,Global Broker,,-37.779941,144.981441,Down
-China,Beijing,Global Broker,,39.9042,116.4074,Up
-France,Toulouse,Global Broker,,43.6006735,1.3502704,Up
-Germany,Offenbach,Global Broker,,50.092108,8.6999878,Down
-United States of America,Washington,Global Broker,,38.942273,-77.265065,Down
-Australia,Melbourne,Global Cache,,-37.779941,144.981441,Down
-Germany,Offenbach,Global Cache,https://opendata.dwd.de/test/wis2/cache/,50.092108,8.6999878,Up
-Japan,Toyko,Global Cache,https://wisdev.kishou.go.jp/data/wis2/,35.689487,139.691711,Up
-Republic of Korea,Seoul,Global Cache,,37.493780,126.917197,Down
-United States of America,Washington,Global Cache,,38.942273,-77.265065,Up
-China,Beijing,Global Discovery Catalogue,https://gdc.wis.cma.cn/dataService,39.9042,116.4074,Up
-Canada,Ottawa,Global Discovery Catalogue,https://api.weather.gc.ca/collections/wis2-discovery-metadata,45.421532,-75.697189,Up
-Republic of Korea,Seoul,Global Discovery Catalogue,,37.493780,126.917197,Down
-Morocco,Casablanca,Global Monitoring,,33.546852,-7.608045,Up
-Algeria,Algiers,WIS2 Node,http://ametwis2box.meteo.dz/,36.742238,3.089219,Up
-Argentina,Buenos Aires,WIS2 Node,http://w2b.smn.gov.ar/,-34.563325,-58.417156,Up
-Australia,Melbourne,WIS2 Node,,-37.779941,144.981441,Down
-Beliz,Belmopan,WIS2 Node,https://wis.nms.gov.bz/,17.2549176,-88.8062899,Up
-Burkina Faso,Ouagadougou,WIS2 Node,http://wis2africa.marocmeteo.ma/,12.398385,-1.501026,Up
-Cameroon,Yaoundé,WIS2 Node,http://wis2africa.marocmeteo.ma/,3.8302911,11.354729,Up
-Canada,Ottawa,WIS2 Node,,45.421532,-75.697189,Up
-Caribbean Meteorological Organization (Regional),Trinidad and Tobago,WIS2 Node,http://18.198.42.212/,10.6966285,-62.5318954,Up
-China,Beijing,WIS2 Node,http://wis2node.wis.cma.cn/,39.9042,116.4074,Up
-Eswatini,Mbabane,WIS2 Node,http://3.77.214.70/,-26.315355,31.0958996,Up
-France,Toulouse,WIS2 Node,,43.6006735,1.3502704,Up
-Germany,Offenbach,WIS2 Node,,50.092108,8.6999878,Up
-Guinea,Konakry,WIS2 Node,http://wis2africa.marocmeteo.ma/,9.629904,-13.585207,Up
-India,New Delhi,WIS2 Node,http://wis2box.imd.gov.in/,28.5272523,77.0438326,Up
-Italy,Rome,WIS2 Node,,41.946104,12.466310,Up
-Kenya,Nairobi,WIS2 Node,http://wis.meteo.go.ke/,-1.3032035,36.6822422,Up
-Malawi,Blantyre,WIS2 Node,http://3.77.198.99/,-15.790633,35.004725,Up
-Morocco,Casablanca,WIS2 Node,http://wis2box.marocmeteo.ma/,33.546852,-7.608045,Up
-Namibia,Windhoek,WIS2 Node,http://wis2box.meteona.com/,-22.5636813,16.906504,Up
-New Zealand,Wellington,WIS2 Node,,-41.283109,174.776473,Down
-Nigeria,Abuja,WIS2 Node,http://wis2africa.marocmeteo.ma/,5.013997,6.929970,Up
-Poland,Warsaw,WIS2 Node,,52.2328227,20.896046,Up
-Republic of Congo,Brazzaville,WIS2 Node,http://wis.dirmet.cg/,-4.256777,15.241981,Up
-Republic of Korea,Seoul,WIS2 Node,https://wis2box.kma.go.kr/,37.493780,126.917197,Up
-Russian Federation,Moscow,WIS2 Node,http://wis2box.mecom.ru/,55.5802497,36.7248393,Up
-South Africa,Pretoria,WIS2 Node,http://wis.weathersa.co.za/,-25.7585568,28.0327976,Up
-Sweden,Norrköping,WIS2 Node,,58.570761,16.116790,Up
-Tanzania,Dodoma,WIS2 Node,,-6.1729412,35.690577,Down
-United States of America,Washington,WIS2 Node,https://wis2box.synopticdata.com/,29.224560,-81.929440,Up
-Zambia,Lusaka,WIS2 Node,https://zmdwis2box.mgee.gov.zm/,-15.4168146,28.26118,Up
-Zimbabwe,Harare,WIS2 Node,http://136.156.88.41/,-17.8165683,30.8917044,Up
-Belize,Ladyville,WIS2 Node (Climate),,17.535176,-88.313857,Down
-ECMWF,Reading,WIS2 Node,,51.419211,-0.950398,Down
-EUMETSAT,Darmstadt,WIS2 Node,,49.865242,8.629230,Up
+Country,City,Component,Latitude,Longitude,Status,URL
+Australia,Melbourne,Global Broker,-37.779941,144.981441,Down,
+China,Beijing,Global Broker,39.9042,116.4074,Up,
+France,Toulouse,Global Broker,43.6006735,1.3502704,Up,
+Germany,Offenbach,Global Broker,50.092108,8.6999878,Down,
+United States of America,Washington,Global Broker,38.942273,-77.265065,Down,
+Australia,Melbourne,Global Cache,-37.779941,144.981441,Down,
+Germany,Offenbach,Global Cache,50.092108,8.6999878,Up,https://opendata.dwd.de/test/wis2/cache/
+Japan,Toyko,Global Cache,35.689487,139.691711,Up,https://wisdev.kishou.go.jp/data/wis2/
+Republic of Korea,Seoul,Global Cache,37.493780,126.917197,Down,
+United States of America,Washington,Global Cache,38.942273,-77.265065,Up,
+China,Beijing,Global Discovery Catalogue,39.9042,116.4074,Up,https://gdc.wis.cma.cn/dataService
+Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189,Up,https://api.weather.gc.ca/collections/wis2-discovery-metadata
+Republic of Korea,Seoul,Global Discovery Catalogue,37.493780,126.917197,Down,
+Morocco,Casablanca,Global Monitoring,33.546852,-7.608045,Up,
+Algeria,Algiers,WIS2 Node,36.742238,3.089219,Up,http://ametwis2box.meteo.dz/
+Argentina,Buenos Aires,WIS2 Node,-34.563325,-58.417156,Up,http://w2b.smn.gov.ar/
+Australia,Melbourne,WIS2 Node,-37.779941,144.981441,Down,
+Beliz,Belmopan,WIS2 Node,17.2549176,-88.8062899,Up,https://wis.nms.gov.bz/
+Burkina Faso,Ouagadougou,WIS2 Node,12.398385,-1.501026,Up,http://wis2africa.marocmeteo.ma/
+Cameroon,Yaoundé,WIS2 Node,3.8302911,11.354729,Up,http://wis2africa.marocmeteo.ma/
+Canada,Ottawa,WIS2 Node,45.421532,-75.697189,Up,
+Caribbean Meteorological Organization (Regional),Trinidad and Tobago,WIS2 Node,10.6966285,-62.5318954,Up,http://18.198.42.212/
+China,Beijing,WIS2 Node,39.9042,116.4074,Up,http://wis2node.wis.cma.cn/
+Eswatini,Mbabane,WIS2 Node,-26.315355,31.0958996,Up,http://3.77.214.70/
+France,Toulouse,WIS2 Node,43.6006735,1.3502704,Up,
+Germany,Offenbach,WIS2 Node,50.092108,8.6999878,Up,
+Guinea,Konakry,WIS2 Node,9.629904,-13.585207,Up,http://wis2africa.marocmeteo.ma/
+India,New Delhi,WIS2 Node,28.5272523,77.0438326,Up,http://wis2box.imd.gov.in/
+Italy,Rome,WIS2 Node,41.946104,12.466310,Up,
+Kenya,Nairobi,WIS2 Node,-1.3032035,36.6822422,Up,http://wis.meteo.go.ke/
+Malawi,Blantyre,WIS2 Node,-15.790633,35.004725,Up,http://3.77.198.99/
+Morocco,Casablanca,WIS2 Node/,33.546852,-7.608045,Up,http://wis2box.marocmeteo.ma
+Namibia,Windhoek,WIS2 Nodem/,-22.5636813,16.906504,Up,http://wis2box.meteona.co
+New Zealand,Wellington,WIS2 Node,-41.283109,174.776473,Down,
+Nigeria,Abuja,WIS2 Node,5.013997,6.929970,Up,http://wis2africa.marocmeteo.ma/
+Poland,Warsaw,WIS2 Node,52.2328227,20.896046,Up,
+Republic of Congo,Brazzaville,WIS2 Node,-4.256777,15.241981,Up,http://wis.dirmet.cg/
+Republic of Korea,Seoul,WIS2 Node,37.493780,126.917197,Up,https://wis2box.kma.go.kr/
+Russian Federation,Moscow,WIS2 Node,55.5802497,36.7248393,Up,http://wis2box.mecom.ru/
+South Africa,Pretoria,WIS2 Node,-25.7585568,28.0327976,Up,http://wis.weathersa.co.za/
+Sweden,Norrköping,WIS2 Node,58.570761,16.116790,Up,
+Tanzania,Dodoma,WIS2 Node,-6.1729412,35.690577,Down,
+United States of America,Washington,WIS2 Node,29.224560,-81.929440,Up,https://wis2box.synopticdata.com/
+Zambia,Lusaka,WIS2 Node,-15.4168146,28.26118,Up,https://zmdwis2box.mgee.gov.zm/
+Zimbabwe,Harare,WIS2 Node,-17.8165683,30.8917044,Up,http://136.156.88.41/
+Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down,
+ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down,
+EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,
 SWIC,Tsim Sha Tsui,WIS2 Node,,22.301667,114.174103,Up
 Brazil,Brazlia,WIS2 Node(Hydrology),,-15.834615,-47.774391,Down
 Uruguay,Montevideo,WIS2 Node (Hydrology),,-34.856218,-56.174222,Down
