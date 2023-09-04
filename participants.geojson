@@ -540,7 +540,7 @@
             "properties": {
                 "Country": "Morocco",
                 "City": "Casablanca",
-                "Component": "WIS2 Node",
+                "Component": "WIS2 Node/",
                 "Status": "Up",
                 "markerIcon": "node.png"
             }
@@ -557,7 +557,7 @@
             "properties": {
                 "Country": "Namibia",
                 "City": "Windhoek",
-                "Component": "WIS2 Node",
+                "Component": "WIS2 Nodem/",
                 "Status": "Up",
                 "markerIcon": "node.png"
             }
