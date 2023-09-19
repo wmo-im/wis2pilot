@@ -516,6 +516,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    13.1676934,
+                    32.8829352
+                ]
+            },
+            "properties": {
+                "Country": "Libya",
+                "City": "Tripoli",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     35.004725,
                     -15.790633
                 ]
@@ -712,6 +729,23 @@
                 "City": "Dodoma",
                 "Component": "WIS2 Node",
                 "Status": "Down",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.5551899,
+                    10.6685068
+                ]
+            },
+            "properties": {
+                "Country": "Trinidad and Tobago",
+                "City": "Port of Spain",
+                "Component": "WIS2 Node",
+                "Status": "Maintenance",
                 "markerIcon": "node.png"
             }
         },
