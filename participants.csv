@@ -29,6 +29,7 @@ Guinea,Konakry,WIS2 Node,9.629904,-13.585207,Up,http://wis2africa.marocmeteo.ma/
 India,New Delhi,WIS2 Node,28.5272523,77.0438326,Up,http://wis2box.imd.gov.in/
 Italy,Rome,WIS2 Node,41.946104,12.466310,Up,
 Kenya,Nairobi,WIS2 Node,-1.3032035,36.6822422,Up,http://wis.meteo.go.ke/
+Libya,Tripoli,WIS2 Node,32.8829352,13.1676934,Up,http://102.221.8.94/
 Malawi,Blantyre,WIS2 Node,-15.790633,35.004725,Up,http://3.77.198.99/
 Morocco,Casablanca,WIS2 Node/,33.546852,-7.608045,Up,http://wis2box.marocmeteo.ma
 Namibia,Windhoek,WIS2 Nodem/,-22.5636813,16.906504,Up,http://wis2box.meteona.co
@@ -41,6 +42,7 @@ Russian Federation,Moscow,WIS2 Node,55.5802497,36.7248393,Up,http://wis2box.meco
 South Africa,Pretoria,WIS2 Node,-25.7585568,28.0327976,Up,http://wis.weathersa.co.za/
 Sweden,Norrköping,WIS2 Node,58.570761,16.116790,Up,
 Tanzania,Dodoma,WIS2 Node,-6.1729412,35.690577,Down,
+Trinidad and Tobago,Port of Spain, WIS2 Node, Maintenance, https://wis.metoffice.gov.tt/
 United States of America,Washington,WIS2 Node,29.224560,-81.929440,Up,https://wis2box.synopticdata.com/
 Zambia,Lusaka,WIS2 Node,-15.4168146,28.26118,Up,https://zmdwis2box.mgee.gov.zm/
 Zimbabwe,Harare,WIS2 Node,-17.8165683,30.8917044,Up,http://136.156.88.41/
