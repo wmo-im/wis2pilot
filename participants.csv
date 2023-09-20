@@ -31,8 +31,8 @@ Italy,Rome,WIS2 Node,41.946104,12.466310,Up,
 Kenya,Nairobi,WIS2 Node,-1.3032035,36.6822422,Up,http://wis.meteo.go.ke/
 Libya,Tripoli,WIS2 Node,32.8829352,13.1676934,Up,http://102.221.8.94/
 Malawi,Blantyre,WIS2 Node,-15.790633,35.004725,Up,http://3.77.198.99/
-Morocco,Casablanca,WIS2 Node/,33.546852,-7.608045,Up,http://wis2box.marocmeteo.ma
-Namibia,Windhoek,WIS2 Nodem/,-22.5636813,16.906504,Up,http://wis2box.meteona.co
+Morocco,Casablanca,WIS2 Node,33.546852,-7.608045,Up,http://wis2box.marocmeteo.ma
+Namibia,Windhoek,WIS2 Node,-22.5636813,16.906504,Up,http://wis2box.meteona.co
 New Zealand,Wellington,WIS2 Node,-41.283109,174.776473,Down,
 Nigeria,Abuja,WIS2 Node,5.013997,6.929970,Up,http://wis2africa.marocmeteo.ma/
 Poland,Warsaw,WIS2 Node,52.2328227,20.896046,Up,
