@@ -286,7 +286,7 @@
                 "Country": "Australia",
                 "City": "Melbourne",
                 "Component": "WIS2 Node",
-                "Status": "Down",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
@@ -397,6 +397,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -82.4981554,
+                    23.0506009
+                ]
+            },
+            "properties": {
+                "Country": "Cuba",
+                "City": "Havana",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     31.0958996,
                     -26.315355
                 ]
@@ -472,6 +489,40 @@
             "properties": {
                 "Country": "India",
                 "City": "New Delhi",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    106.6643633,
+                    -6.2297208
+                ]
+            },
+            "properties": {
+                "Country": "Indonesia",
+                "City": "Jakarta",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    51.1825038,
+                    35.7074609
+                ]
+            },
+            "properties": {
+                "Country": "Iran(Islamic Republic of)",
+                "City": "Tehran",
                 "Component": "WIS2 Node",
                 "Status": "Up",
                 "markerIcon": "node.png"
@@ -703,6 +754,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    103.6790953,
+                    1.3139946
+                ]
+            },
+            "properties": {
+                "Country": "Singapore",
+                "City": "Singapore",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     28.0327976,
                     -25.7585568
                 ]
@@ -778,6 +846,23 @@
             "properties": {
                 "Country": "United States of America",
                 "City": "Washington",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -56.174222,
+                    -34.856218
+                ]
+            },
+            "properties": {
+                "Country": "Uruguay",
+                "City": "Montevideo",
                 "Component": "WIS2 Node",
                 "Status": "Up",
                 "markerIcon": "node.png"
