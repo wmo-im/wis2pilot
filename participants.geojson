@@ -499,6 +499,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    71.1712664,
+                    51.1038935
+                ]
+            },
+            "properties": {
+                "Country": "Kazakhstan",
+                "City": "Astana",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     36.6822422,
                     -1.3032035
                 ]
