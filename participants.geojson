@@ -286,7 +286,7 @@
                 "Country": "Australia",
                 "City": "Melbourne",
                 "Component": "WIS2 Node",
-                "Status": "Up",
+                "Status": "In progress",
                 "markerIcon": "node.png"
             }
         },
@@ -524,7 +524,7 @@
                 "Country": "Iran(Islamic Republic of)",
                 "City": "Tehran",
                 "Component": "WIS2 Node",
-                "Status": "Up",
+                "Status": "In progress",
                 "markerIcon": "node.png"
             }
         },
