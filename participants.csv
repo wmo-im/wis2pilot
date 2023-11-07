@@ -15,7 +15,7 @@ Republic of Korea,Seoul,Global Discovery Catalogue,37.493780,126.917197,Down,
 Morocco,Casablanca,Global Monitoring,33.546852,-7.608045,Up,
 Algeria,Algiers,WIS2 Node,36.742238,3.089219,Up,http://ametwis2box.meteo.dz/
 Argentina,Buenos Aires,WIS2 Node,-34.563325,-58.417156,Up,http://w2b.smn.gov.ar/
-Australia,Melbourne,WIS2 Node,-37.779941,144.981441,Up, http://www.wis2.cloud.bom.gov.au/
+Australia,Melbourne,WIS2 Node,-37.779941,144.981441,In progress, http://www.wis2.cloud.bom.gov.au/
 Beliz,Belmopan,WIS2 Node,17.2549176,-88.8062899,Up,https://wis.nms.gov.bz/
 Burkina Faso,Ouagadougou,WIS2 Node,12.398385,-1.501026,Up,http://wis2africa.marocmeteo.ma/
 Cameroon,Yaoundé,WIS2 Node,3.8302911,11.354729,Up,http://wis2africa.marocmeteo.ma/
@@ -29,7 +29,7 @@ Germany,Offenbach,WIS2 Node,50.092108,8.6999878,Up,
 Guinea,Konakry,WIS2 Node,9.629904,-13.585207,Up,http://wis2africa.marocmeteo.ma/
 India,New Delhi,WIS2 Node,28.5272523,77.0438326,Up,http://wis2box.imd.gov.in/
 Indonesia,Jakarta,WIS2 Node,-6.2297208,106.6643633,Up,https://wis2node.bmkg.go.id/
-Iran(Islamic Republic of),Tehran,WIS2 Node,35.7074609,51.1825038,Up,wis2.irimo.ir
+Iran(Islamic Republic of),Tehran,WIS2 Node,35.7074609,51.1825038,In progress,wis2.irimo.ir
 Italy,Rome,WIS2 Node,41.946104,12.466310,Up,
 Kazakhstan,Astana,WIS2 Node,51.1038935,71.1712664,Up,http://wis2box.kazhydromet.kz/
 Kenya,Nairobi,WIS2 Node,-1.3032035,36.6822422,Up,http://wis.meteo.go.ke/
