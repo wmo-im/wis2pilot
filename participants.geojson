@@ -82,7 +82,7 @@
                 "Country": "United States of America",
                 "City": "Washington",
                 "Component": "Global Broker",
-                "Status": "Down",
+                "Status": "In progress",
                 "markerIcon": "gb.png"
             }
         },
