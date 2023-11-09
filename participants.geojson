@@ -65,7 +65,7 @@
                 "Country": "Germany",
                 "City": "Offenbach",
                 "Component": "Global Broker",
-                "Status": "Down",
+                "Status": "TBC",
                 "markerIcon": "gb.png"
             }
         },
@@ -99,7 +99,7 @@
                 "Country": "Australia",
                 "City": "Melbourne",
                 "Component": "Global Cache",
-                "Status": "Down",
+                "Status": "TBC",
                 "markerIcon": "gc.png"
             }
         },
