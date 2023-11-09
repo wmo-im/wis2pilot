@@ -20,7 +20,6 @@ Beliz,Belmopan,WIS2 Node,17.2549176,-88.8062899,Up,https://wis.nms.gov.bz/
 Burkina Faso,Ouagadougou,WIS2 Node,12.398385,-1.501026,Up,http://wis2africa.marocmeteo.ma/
 Cameroon,Yaoundé,WIS2 Node,3.8302911,11.354729,Up,http://wis2africa.marocmeteo.ma/
 Canada,Ottawa,WIS2 Node,45.421532,-75.697189,Up,
-Caribbean Meteorological Organization (Regional),Trinidad and Tobago,WIS2 Node,10.6966285,-62.5318954,Up,http://18.198.42.212/
 China,Beijing,WIS2 Node,39.9042,116.4074,Up,http://wis2node.wis.cma.cn/
 Cuba,Havana,WIS2 Node,23.0506009,-82.4981554,Up,http://wis.insmet.cu/
 Eswatini,Mbabane,WIS2 Node,-26.315355,31.0958996,Up,http://3.77.214.70/
@@ -52,6 +51,18 @@ United States of America,Washington,WIS2 Node,29.224560,-81.929440,Up,https://wi
 Uruguay,Montevideo,WIS2 Node,-34.856218,-56.174222,Up,https://w2b.inumet.gub.uy
 Zambia,Lusaka,WIS2 Node,-15.4168146,28.26118,Up,https://zmdwis2box.mgee.gov.zm/
 Zimbabwe,Harare,WIS2 Node,-17.8165683,30.8917044,Up,http://136.156.88.41/
+Caribbean Meteorological Organization (Regional),Trinidad and Tobago,WIS2 Node,10.6966285,-62.5318954,Up,http://18.198.42.212/
+Antigua and Barbuda,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Cayman Islands (British Caribbean Territories),CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Dominica,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Guyana,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Jamaica,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Saint Lucia,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Curaçao and Sint Maarten,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Turks and Caicos Islands (British Caribbean Territories),CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+Grenada,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+St. Kitts and Nevis,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
+St. Vincent and the Grenadine,CMO(Regional),WIS2 Node,,Up,http://18.198.42.212/
 Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down,
 ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down,
 EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,
