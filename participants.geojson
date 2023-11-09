@@ -150,7 +150,7 @@
                 "Country": "Republic of Korea",
                 "City": "Seoul",
                 "Component": "Global Cache",
-                "Status": "In progress",
+                "Status": "TBC",
                 "markerIcon": "gc.png"
             }
         },
@@ -218,7 +218,7 @@
                 "Country": "Republic of Korea",
                 "City": "Seoul",
                 "Component": "Global Discovery Catalogue",
-                "Status": "Down",
+                "Status": "In progress",
                 "markerIcon": "gdc.png"
             }
         },
