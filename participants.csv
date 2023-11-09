@@ -2,9 +2,9 @@ Country,City,Component,Latitude,Longitude,Status,URL
 Australia,Melbourne,Global Broker,-37.779941,144.981441,Down,
 China,Beijing,Global Broker,39.9042,116.4074,Up,gb.wis.cma.cn
 France,Toulouse,Global Broker,43.6006735,1.3502704,Up,globalbroker.meteo.fr
-Germany,Offenbach,Global Broker,50.092108,8.6999878,Down,
+Germany,Offenbach,Global Broker,50.092108,8.6999878,TBC,
 United States of America,Washington,Global Broker,38.942273,-77.265065,Up,wis2globalbroker.nws.noaa.gov
-Australia,Melbourne,Global Cache,-37.779941,144.981441,Down,
+Australia,Melbourne,Global Cache,-37.779941,144.981441,TBC,
 Germany,Offenbach,Global Cache,50.092108,8.6999878,Up,https://opendata.dwd.de/test/wis2/cache/
 Japan,Toyko,Global Cache,35.689487,139.691711,Up,https://wisdev.kishou.go.jp/data/wis2/
 Republic of Korea,Seoul,Global Cache,37.493780,126.917197,Down,
