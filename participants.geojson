@@ -286,7 +286,7 @@
                 "Country": "Australia",
                 "City": "Melbourne",
                 "Component": "WIS2 Node",
-                "Status": "In progress",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
