@@ -830,7 +830,7 @@
                 "Country": "Trinidad and Tobago",
                 "City": "Port of Spain",
                 "Component": "WIS2 Node",
-                "Status": "Maintenance",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
