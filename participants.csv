@@ -7,7 +7,7 @@ United States of America,Washington,Global Broker,38.942273,-77.265065,Up,wis2gl
 Australia,Melbourne,Global Cache,-37.779941,144.981441,TBC,
 Germany,Offenbach,Global Cache,50.092108,8.6999878,Up,https://opendata.dwd.de/test/wis2/cache/
 Japan,Toyko,Global Cache,35.689487,139.691711,Up,https://wisdev.kishou.go.jp/data/wis2/
-Republic of Korea,Seoul,Global Cache,37.493780,126.917197,TBC,
+Republic of Korea,Seoul,Global Cache,37.493780,126.917197,Up,https://wis2data.kma.go.kr/cache/a/wis2/
 United States of America,Washington,Global Cache,38.942273,-77.265065,Up,
 China,Beijing,Global Discovery Catalogue,39.9042,116.4074,Up,https://gdc.wis.cma.cn/dataService
 Canada,Ottawa,Global Discovery Catalogue,45.421532,-75.697189,Up,https://api.weather.gc.ca/collections/wis2-discovery-metadata
