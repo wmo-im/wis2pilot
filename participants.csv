@@ -64,7 +64,7 @@ St. Kitts and Nevis,CMO(Regional),WIS2 Node,,,Up,http://18.198.42.212/
 St. Vincent and the Grenadine,CMO(Regional),WIS2 Node,,,Up,http://18.198.42.212/
 Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down,
 ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down,
-EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,
+EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,http://64.225.129.189
 SWIC,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up,
 Brazil,Brazlia,WIS2 Node(Hydrology),-15.834615,-47.774391,Down,
 Uruguay,Montevideo,WIS2 Node (Hydrology),-34.856218,-56.174222,Down,
