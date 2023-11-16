@@ -150,7 +150,7 @@
                 "Country": "Republic of Korea",
                 "City": "Seoul",
                 "Component": "Global Cache",
-                "Status": "TBC",
+                "Status": "Up",
                 "markerIcon": "gc.png"
             }
         },
@@ -353,23 +353,6 @@
             "properties": {
                 "Country": "Canada",
                 "City": "Ottawa",
-                "Component": "WIS2 Node",
-                "Status": "Up",
-                "markerIcon": "node.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -62.5318954,
-                    10.6966285
-                ]
-            },
-            "properties": {
-                "Country": "Caribbean Meteorological Organization (Regional)",
-                "City": "Trinidad and Tobago",
                 "Component": "WIS2 Node",
                 "Status": "Up",
                 "markerIcon": "node.png"
@@ -660,7 +643,7 @@
                 "Country": "New Zealand",
                 "City": "Wellington",
                 "Component": "WIS2 Node",
-                "Status": "Down",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
@@ -897,6 +880,193 @@
             "properties": {
                 "Country": "Zimbabwe",
                 "City": "Harare",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -62.6698122,
+                    17.3261297
+                ]
+            },
+            "properties": {
+                "Country": "Antigua and Barbuda",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.8943576,
+                    19.5055554
+                ]
+            },
+            "properties": {
+                "Country": "Cayman Islands (British Caribbean Territories)",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.6872024,
+                    15.4267921
+                ]
+            },
+            "properties": {
+                "Country": "Dominica",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.2520988,
+                    4.9356936
+                ]
+            },
+            "properties": {
+                "Country": "Guyana",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.5962404,
+                    18.1174524
+                ]
+            },
+            "properties": {
+                "Country": "Jamaica",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.3006001,
+                    13.9132981
+                ]
+            },
+            "properties": {
+                "Country": "Saint Lucia",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -63.0442838,
+                    18.0122019
+                ]
+            },
+            "properties": {
+                "Country": "Curaçao and Sint Maarten",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.4497004,
+                    21.57379
+                ]
+            },
+            "properties": {
+                "Country": "Turks and Caicos Islands (British Caribbean Territories)",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.9199989,
+                    12.2602769
+                ]
+            },
+            "properties": {
+                "Country": "Grenada",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -63.0262965,
+                    17.2499869
+                ]
+            },
+            "properties": {
+                "Country": "St. Kitts and Nevis",
+                "City": "CMO(Regional)",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.9430213,
+                    12.9720914
+                ]
+            },
+            "properties": {
+                "Country": "St. Vincent and the Grenadine",
+                "City": "CMO(Regional)",
                 "Component": "WIS2 Node",
                 "Status": "Up",
                 "markerIcon": "node.png"
