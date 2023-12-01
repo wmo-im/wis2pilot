@@ -533,6 +533,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    138.4478568,
+                    35.5020296
+                ]
+            },
+            "properties": {
+                "Country": "Japan",
+                "City": "Tokyo",
+                "Component": "WIS2 Node",
+                "Status": "Up",
+                "markerIcon": "node.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     71.1712664,
                     51.1038935
                 ]
