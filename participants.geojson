@@ -131,7 +131,7 @@
             },
             "properties": {
                 "Country": "Japan",
-                "City": "Toyko",
+                "City": "Tokyo",
                 "Component": "Global Cache",
                 "Status": "Up",
                 "markerIcon": "gc.png"
