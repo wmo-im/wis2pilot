@@ -48,6 +48,7 @@ South Africa,Pretoria,WIS2 Node,-25.7585568,28.0327976,Up,http://wis.weathersa.c
 Sweden,Norrköping,WIS2 Node,58.570761,16.116790,Up,
 Tanzania,Dodoma,WIS2 Node,-6.1729412,35.690577,Down,
 Trinidad and Tobago,Port of Spain,WIS2 Node,10.6685068,-61.5551899,Up, https://wis.metoffice.gov.tt/
+United Kingdom of Great Britain and Northern Ireland, WIS2 Node, 50.724399,-3.596121, In progress, 
 United States of America,Washington,WIS2 Node,29.224560,-81.929440,Up,https://wis2box.synopticdata.com/
 Uruguay,Montevideo,WIS2 Node,-34.856218,-56.174222,Up,https://w2b.inumet.gub.uy
 Zambia,Lusaka,WIS2 Node,-15.4168146,28.26118,Up,https://zmdwis2box.mgee.gov.zm/
@@ -64,7 +65,7 @@ Grenada,CMO(Regional),WIS2 Node,12.2602769,-61.9199989,Up,http://18.198.42.212/
 St. Kitts and Nevis,CMO(Regional),WIS2 Node,17.2499869,-63.0262965,Up,http://18.198.42.212/
 St. Vincent and the Grenadine,CMO(Regional),WIS2 Node,12.9720914,-61.9430213,Up,http://18.198.42.212/
 Belize,Ladyville,WIS2 Node (Climate),17.535176,-88.313857,Down,
-ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Down,
+ECMWF,Reading,WIS2 Node,51.419211,-0.950398,Up,
 EUMETSAT,Darmstadt,WIS2 Node,49.865242,8.629230,Up,http://64.225.129.189
 SWIC,Tsim Sha Tsui,WIS2 Node,22.301667,114.174103,Up,
 Brazil,Brazlia,WIS2 Node(Hydrology),-15.834615,-47.774391,Down,
