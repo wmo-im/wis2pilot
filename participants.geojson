@@ -839,6 +839,23 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    -3.596121,
+                    50.724399
+                ]
+            },
+            "properties": {
+                "Country": "United Kingdom of Great Britain and Northern Ireland",
+                "City": "Exeter",
+                "Component": " WIS2 Node",
+                "Status": " In progress",
+                "markerIcon": "None.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     -81.92944,
                     29.22456
                 ]
@@ -1119,7 +1136,7 @@
                 "Country": "ECMWF",
                 "City": "Reading",
                 "Component": "WIS2 Node",
-                "Status": "Down",
+                "Status": "Up",
                 "markerIcon": "node.png"
             }
         },
