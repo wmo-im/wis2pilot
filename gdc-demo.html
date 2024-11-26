@@ -84,14 +84,15 @@
                 title2 = '<a id="' + bbox_csv + '" class="a-record" target="_blank" title="' + rec.properties.title + '" href="' + url  + '">' + rec.properties.title + '</a>';
                 snippet += '<h5>' + title2 + '</h5>';
                 snippet += '<h5>' + truncate(rec.properties.description, 255) + '</h5>';
+                snippet += '<small><strong>Type</strong>: ' + rec.properties.type + '</small><br/>';
                 snippet += '<small><strong>Created</strong>: ' + rec.properties.created + '</small><br/>';
                 snippet += '<small><strong>Links</strong></small><br/>';
                 snippet += '<ul>';
 
                 for (let i = 0; i < rec.links.length; i++) {
-                    if (rec.links[i].type === 'MQTT') {
-                        if (rec.links[i].hasOwnProperty('wmo:topic')) {
-                            channel2 = rec.links[i]['wmo:topic'];
+                    if (rec.links[i].href.startsWith('mqtt')) {
+                        if (rec.links[i].hasOwnProperty('channel') && rec.links[i].channel.startsWith('cache/a/wis2')) {
+                            channel2 = rec.links[i]['channel'];
                         } else {
                             channel2 = rec.links[i].channel;
                         }
@@ -105,18 +106,18 @@
                 return snippet;
             }
 
-            function search(startindex) {
+            function search(offset) {
                 params = {
                     limit: limit
                 }
 
                 $('#div-oarec-results-glass').toggle();
 
-                if (!startindex) {
-                    startindex = 0;
+                if (!offset) {
+                    offset = 0;
                 }
 
-                params.startindex = startindex;
+                params.offset = offset;
 
                 var q = $('#input-q').val().trim();
 
@@ -150,8 +151,8 @@
                         var returned = results.numberReturned;
                         var nextrecord = results.numberReturned;
 
-                        $('#input-startindex').val(startindex);
-                        $('#input-nextrecord').val(startindex + returned);
+                        $('#input-offset').val(offset);
+                        $('#input-nextrecord').val(offset + returned);
                         $('#input-matched').val(matched);
 
                         if (matched === 0) {
@@ -166,14 +167,14 @@
                         else {
                             $('#li-next').attr('class', 'active');
                         }
-                        if (startindex === 0) {
+                        if (offset === 0) {
                             $('#li-previous').attr('class', 'disabled');
                         }
                         else {
                             $('#li-previous').attr('class', 'active');
                         }
 
-                        results_html = '<strong>Results ' + startindex + '-' + $('#input-nextrecord').val() + ' of ' + matched + ' record(s)</strong>';
+                        results_html = '<strong>Results ' + offset + '-' + $('#input-nextrecord').val() + ' of ' + matched + ' record(s)</strong>';
                         $('#div-results').html(results_html);
 
                         for (let i = 0; i < results.features.length; i++) { 
@@ -203,11 +204,11 @@
                 });
                 $('#a-previous').click(function(event){
                     event.preventDefault(); 
-                    startindex2 = $('#input-startindex').val() - limit;
-                    if (startindex2 < 1) {
+                    offset2 = $('#input-offset').val() - limit;
+                    if (offset2 < 1) {
                         return;
                     }
-                    search(startindex2);
+                    search(offset2);
                 }); 
                 $('#a-next').click(function(event){
                     event.preventDefault(); 
@@ -288,7 +289,7 @@
         <section>
             <div class="panel mx-auto border" style="width: 95%;">
                 <form id="form-search">
-                    <input type="hidden" id="input-startindex"/>
+                    <input type="hidden" id="input-offset"/>
                     <input type="hidden" id="input-matched"/>
                     <input type="hidden" id="input-nextrecord"/>
                     <div class="row">
@@ -298,7 +299,7 @@
                     <div class="row">
                         <div class="col-sm-4 pull-left" id="div-oarec-url">
                         <label for="input-oarec-url">Global Discovery Catalogue Canada</label>
-                        <input class="form-control input-medium" type="hidden" id="input-oarec-url" placeholder="https://api.weather.gc.ca/collections/wis2-discovery-metadata" value="https://api.weather.gc.ca/collections/wis2-discovery-metadata" readonly/></div>
+                        <input class="form-control input-medium" type="hidden" id="input-oarec-url" placeholder="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata" value="https://wis2-gdc.weather.gc.ca/collections/wis2-discovery-metadata" readonly/></div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4" id="div-map"></div>
